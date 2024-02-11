@@ -1,198 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>My CV</title>
-</head>
-<body>
-
-    <header class="bg-light text-white p-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="img-fluid rounded-circle">
-                    <!-- Placeholder URL for fake image -->
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <h1>Your Name</h1>
-                    <p>Job Title</p>
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div class="d-inline">
-                        <a href="" class="btn-btn-primary">Hire me!</a>
-                        <a href="" class="btn-btn-light">Download CV</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <title>My CV</title>
+    </head>
+    <body>
+        <style>
+            .bunder {
+                border-radius: 20px 20px 20px 20px !important;
+            }
+            a {
+                text-decoration: none !important;
+            }
+            .img-post-inner {
+                width: 100%;
+                height: 350px;
+                object-fit: contain;
+                background-color: white;
+            }
+            .img-post-inner-bar {
+                width: 100%;
+                height: 80px;
+                object-fit: cover;
+            }
+            ul {
+                list-style: none;
+            }
+        </style>
+        <header class="bg-light text-white p-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <img
+                            src="https://via.placeholder.com/150"
+                            alt="Profile Picture"
+                            class="img-fluid rounded-circle">
+                        <!-- Placeholder URL for fake image -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <h1>Fadel Muhammad</h1>
+                        <p>Software Engineer</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="d-inline">
+                            <a href="" class="btn btn-primary">Hire me!</a>
+                            <a href="" class="btn btn-light">Download CV</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="container mt-4">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="true">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="skills" role="tabpanel" aria-labelledby="skills-tab">
-                <div class="row d-flex justify-content-space">
-                    <div class="col-md-4 my-2">
-                        <!-- <h4 class=" text-secondary"><i class="fas fa-address-card mt-1"></i> Profile</h4> -->
-                        <!-- <hr class="bg-light"> -->
-                        <div class="round-3 round-3 p-2" id="body">
-                            <div class="mt-2">
-                                <h4>Intro</h4>
-                                <hr class="bg-light">
-                                <div class="">
-                                    <small>I have been immersed in the world of programming for over three years, gaining valuable experience along the way. As a fast learner, I am always eager to explore new programming languages. In my current role, I have been actively involved in the development of two projects using Laravel and two applications using Java Spring Boot. Additionally, I have undertaken numerous app development projects for clients, collaborating effectively with a skilled team.
-                                        My expertise extends to managing and providing comprehensive data solutions for mobile developers through SQL/Non-SQL databases (APIs). I am also adept at identifying and resolving issues, utilizing languages such as JavaScript, Spring, and PHP in my day-to-day tasks.                            
-                                        I embarked on my journey as a developer in 2019, and the subsequent years have been a rewarding experience of continuous growth and learning.
-                                    </small>
-                                </div>
+        </header>
+        <section class="container mt-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        id="skills-tab"
+                        data-toggle="tab"
+                        href="#skills"
+                        role="tab"
+                        aria-controls="skills"
+                        aria-selected="true"><h6>Post</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        id="profile-tab"
+                        data-toggle="tab"
+                        href="#profile"
+                        role="tab"
+                        aria-controls="profile"
+                        aria-selected="false"><h6>About</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        id="contact-tab"
+                        data-toggle="tab"
+                        href="#contact"
+                        role="tab"
+                        aria-controls="contact"
+                        aria-selected="false"><h6>Photos</h6>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div
+                    class="tab-pane fade show active"
+                    id="skills"
+                    role="tabpanel"
+                    aria-labelledby="skills-tab">
+                    <div class="row d-flex justify-content-space">
+                        <div class="col-md-4 my-2">
+                            <!-- <h4 class=" text-secondary"><i class="fas fa-address-card mt-1"></i>
+                            Profile</h4> -->
+                            <!-- <hr class="bg-light"> -->
+                            <div class="round-3 round-3 p-2" id="body">
                                 <div class="mt-2">
-                                    <h4>Contact</h4>
+                                    <h4>Intro</h4>
+                                    <hr class="bg-light">
+                                    <div class="">
+                                        <small>I have been immersed in the world of programming for over three years,
+                                            gaining valuable experience along the way. As a fast learner, I am always eager
+                                            to explore new programming languages. In my current role, I have been actively
+                                            involved in the development of two projects using Laravel and two applications
+                                            using Java Spring Boot. Additionally, I have undertaken numerous app development
+                                            projects for clients, collaborating effectively with a skilled team. My
+                                            expertise extends to managing and providing comprehensive data solutions for
+                                            mobile developers through SQL/Non-SQL databases (APIs). I am also adept at
+                                            identifying and resolving issues, utilizing languages such as JavaScript,
+                                            Spring, and PHP in my day-to-day tasks. I embarked on my journey as a developer
+                                            in 2019, and the subsequent years have been a rewarding experience of continuous
+                                            growth and learning.
+                                        </small>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h4>Contact</h4>
+                                        <hr class="bg-light">
+                                        <ul style="list-style: none;" class="m-1 p-1">
+                                            <li class="my-2">
+                                                <a href="" class="text-body">
+                                                    <i class="fa-brands fa-github"></i>
+                                                    Github</a>
+                                            </li>
+                                            <li class="my-2">
+                                                <a href="" class="text-body">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                    Linkedin</a>
+                                            </li>
+                                            <li class="my-2">
+                                                <a href="" class="text-body">
+                                                    <i class="fa-brands fa-whatsapp"></i>
+                                                    Whatsapp</a>
+                                            </li>
+                                            <li class="my-2">
+                                                <a href="" class="text-body">
+                                                    <i class="fa fa-envelope"></i>
+                                                    Email</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="knowledge mt-2">
+                                    <h4>Knowledge</h4>
                                     <hr class="bg-light">
                                     <ul style="list-style: none;" class="m-1 p-1">
-                                        <li class="my-2"><a href="" class="text-body"><i class="fa-brands fa-github"></i> Github</a> </li>
-                                        <li class="my-2"><a href="" class="text-body"><i class="fa-brands fa-instagram"></i> Instagram</a> </li>
-                                        <li class="my-2"><a href="" class="text-body"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a> </li>
-                                        <li class="my-2"><a href="" class="text-body"><i class="fa fa-envelope"></i> Email</a> </li>
+                                        <li>
+                                            <i class="fa-brands fa-html5"></i>
+                                            HTML</li>
+                                        <li>
+                                            <i class="fa-brands fa-laravel"></i>
+                                            Laravel ( PHP )</li>
+                                        <li>
+                                            <i class="fa-brands fa-react"></i>
+                                            React ( Native / Js )</li>
+                                        <li>
+                                            <i class="fa-brands fa-js"></i>
+                                            Express Js</li>
+                                        <li>
+                                            <i class="fa-brands fa-java"></i>
+                                            Spring Boot ( Java )</li>
+                                        <li>
+                                            <i class="fas fa-database"></i>
+                                            Postgree, MySql, Oracle & Firebase</li>
                                     </ul>
                                 </div>
+                                <div class="photos mt-2">
+                                    <h4>Photos</h4>
+                                    <hr class="bg-light">
+                                    <div class="row" id="image-bar"></div>
+                                    <button
+                                        id="button-see-more"
+                                        class="btn btn-light w-100 m-0 mt-2"
+                                        onclick="seeMorePorto()">
+                                        See More</button>
+                                </div>
                             </div>
-                            <div class="knowledge mt-2">
-                                <h4>Knowledge</h4>
-                                <hr class="bg-light">
-                                <ul style="list-style: none;" class="m-1 p-1">
-                                    <li><i class="fa-brands fa-html5"></i> HTML</li>
-                                    <li><i class="fa-brands fa-laravel"></i> Laravel ( PHP )</li>
-                                    <li><i class="fa-brands fa-react"></i> React ( Native / Js )</li>
-                                    <li><i class="fa-brands fa-js"></i> Express Js</li>
-                                    <li><i class="fa-brands fa-java"></i> Spring Boot ( Java )</li>
-                                    <li><i class="fas fa-database"></i> Postgree, MySql, Oracle & Firebase</li>
-                                </ul>
-                            </div>
-                            <div class="photos mt-2">
-                                <h4>Portofolio</h4>
-                                <hr class="bg-light">
-                                <div class="row" id="image-bar"></div>
-                                <button id="button-see-more" class="btn btn-light w-100 m-0 mt-2" onclick="seeMorePorto()"> See More</button>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="col-md-8 my-2">
-                        <h4>Portiofolio & Experiences</h4>
-                        <hr class="bg-light">
-                       <div class="head-form d-flex justify-content-between">
-                        <div class="mx-2">
-                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-circle mx-2" width="40" height="40" alt="">
                         </div>
-                        <div class="w-100 d-inline">
-                            <a href="mailto:fadel.mm01@gmail.com" style="text-decoration: none;" target="_blank" class="w-100">
-                                <input type="text" name="body" disabled placeholder="Send Something to Fadel" style="border-radius: 20px 20px 20px 20px !important;" class="form-control ">
-                            </a>
-                            <div class="d-flex justify-content-end mt-2">
-                                <button class="btn btn-sm btn-light">Kirim Pesan</button>
+                        <div class="col-md-8 my-2 mt-4">
+                            <h4>Portiofolio</h4>
+                            <hr class="bg-light">
+                            <div class="head-form d-flex p-2 py-4 justify-content-between bunder">
+                                <div class="mx-2">
+                                    <img
+                                        src="https://via.placeholder.com/150"
+                                        class="img-fluid rounded-circle mx-2"
+                                        width="40"
+                                        height="40"
+                                        alt="">
+                                </div>
+                                <div class="w-100 d-inline px-2">
+                                    <a
+                                        href="mailto:fadel.mm01@gmail.com"
+                                        style="text-decoration: none;"
+                                        target="_blank"
+                                        class="w-100 form-control bunder bg-light text-secondary">
+                                        Send something to padel..
+                                    </a>
+                                </div>
                             </div>
-                        </div>`
-                       </div>
+                            <div class="main-porto mx-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab">
+                    <div class="about-box bunder my-4 mt-4">
+                        <div class="">
+                            <h4>Experiences and Education</h4>
+                            <hr>
+                        </div>
+                        <h4><i class="fas fa-briefcase"></i> Work Experience</h4>
+                        <div class="work-list">
+                        </div>
+                        <hr>
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <div class="edu-list">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="contact"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab">
+                    <div class="my-4">
+                        <h4>Photos</h4>
+                        <hr>
+                        <div class="row" id="image-bar-x">        
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-          </div>
-    </section>
-    <!-- Add more sections for education, experience, skills, etc. -->
-    <footer class="bg-light p-2 text-center">
-        <!-- <p>Contact: fadel.mm01@gmail.com</p> -->
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </section>
+        <!-- Add more sections for education, experience, skills, etc. -->
+        <footer class="bg-light p-2 text-center">
+            <!-- <p>Contact: fadel.mm01@gmail.com</p> -->
+        </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <script>
-        var images = [
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-            {
-                text:"hehe",
-                url:"https://via.placeholder.com/300",
-                other:[]
-            },
-        ];
-        $(document).ready(() => {
-            const datas = images.slice(0,6)
-            datas.forEach((item, i) => {
-            $('#image-bar').append(`<div class="col-4 p-1 mb-1"><img src="${item.url}" alt="${item.text}" class="img-fluid"></div>`);
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+            let images = [];
+            $.get("/data.json",
+            function (data) {
+                edulist(data.pendidikan);
+                worklist(data.pengalaman);
+                portoList(data);
+                data.porto.forEach((item, i) => {
+                    images.push(item)
+                })
+
+            });
+            $(document).ready(() => {
+                const datas = images.slice(0, 6)
+                datas.forEach((item, i) => {
+                    $('#image-bar').append(
+                        `<div class="col-4 p-1 mb-1"><img src="${item.gambar}" alt="${item.judul}" class="img-fluid"></div>`
+                    );
+                })
+
+                images.forEach((item, i) => {
+                    $('#image-bar-x').append(
+                        `<div class="col-4 p-0 m-0 mb-1"><img src="${item.gambar}" alt="${item.judul}" class="img-fluid"></div>`
+                    );
+                })
             })
-        })
-       function seeMorePorto() { 
-        $('#image-bar').html('')
-        $('#button-see-more').addClass('d-none');
-        images.forEach((item, i) => {
-            $('#image-bar').append(`<div class="col-4 p-1 mb-1">
-                                        <img src="${item.url}" alt="${item.title}" class="img-fluid">
-                                    </div>`);
-        })
-    }
-    </script>
+            
+            function portoList(data) {
+                data.porto.forEach((item, i) => {
+
+                $('.main-porto').append(
+                    `<div class="post bunder py-3">
+                        <div class="d-flex">
+                            <div class="mx-2">
+                                <img
+                                    src="${data.profile}"
+                                    class="img-fluid rounded-circle mx-2"
+                                    width="40"
+                                    height="40"
+                                    alt="">
+                            </div>
+                            <div class="inner-post">
+                                <h6 class="name mb-0">${data.nama}</h6>
+                                <small class="text-body">
+                                    Last year ago ·
+                                    <i class="fas fa-earth-americas"></i>
+                                </small>
+                                <div class="desc-post my-1">
+                                    ${item.judul}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-post">
+                            <img
+                                src="https://via.placeholder.com/730"
+                                class="img-fluid img-post-inner"
+                                alt="">
+                            <div class="row mt-1 mx-3">
+                                <div class="col-3 m-0 p-1">
+                                    <img
+                                        src="https://via.placeholder.com/730"
+                                        class="img-fluid img-post-inner-bar"
+                                        alt="">
+                                </div>
+                                <div class="col-3 m-0 p-1">
+                                    <img
+                                        src="https://via.placeholder.com/730"
+                                        class="img-fluid img-post-inner-bar"
+                                        alt="">
+                                </div>
+                                <div class="col-3 m-0 p-1">
+                                    <img
+                                        src="https://via.placeholder.com/730"
+                                        class="img-fluid img-post-inner-bar"
+                                        alt="">
+                                </div>
+                                <div class="col-3 m-0 p-1">
+                                    <img
+                                        src="https://via.placeholder.com/730"
+                                        class="img-fluid img-post-inner-bar"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>`
+                )
+            });
+            }
+
+            function getInfo(data) {
+                let listItems = data.map(item => `<li>${item}</li>`);
+                return listItems.join('');
+            }
+
+
+            function worklist(data){
+                data.forEach((item, i) => {
+                $('.work-list').append(`
+                <div class="d-flex my-4" id="myjob">
+                    <div class="">
+                        <img
+                            src="https://via.placeholder.com/150"
+                            class="img-fluid rounded-circle"
+                            height="50"
+                            width="50"
+                            alt="">
+                    </div>
+                    <div class="mx-3">
+                        <h6 class="mb-0">${item.perusahaan}</h6>
+                        <small>Jakarta Indonesia</small>
+                        <br>
+                        <small>Since :
+                            <span>${item.waktu.mulai} - ${item.waktu.selesai}</span></small>
+                        <br>
+                        <small>
+                            <ol class="m-0 mx-3  p-0 job-desk-list">
+                                ${getInfo(item.tugas)}
+                            </ol>
+                        </small>
+                    </div>
+
+                </div>
+            `);
+            }) 
+            }
+            function edulist(data){
+                $('.edu-list').append(
+                `<div class="d-flex my-4" id="myjob">
+                    <div class="">
+                        <img
+                            src="https://via.placeholder.com/150"
+                            class="img-fluid rounded-circle"
+                            height="50"
+                            width="50"
+                            alt=""></div>
+                        <div class="mx-3">
+                            <h6 class="mb-0">${data.nama}</h6>
+                            <small>${data.gelar} in ${data.jurusan} with GPA :
+                                <strong>${data.ipk}</strong>
+                            </small>
+                            <br>
+                                <small>
+                                    <strong>${data.dari} - ${data.sampai}</strong>
+                                </small>
+                                <br>
+                                    <small>
+                                        <ol class="m-0 mx-3 p-0">
+                                            <li>Learn Basic Programing and Algoritm</li>
+                                            <li>Learn how to management team in college project</li>
+                                        </ol>
+                                    </small>
+                                </div>
+                            </div>`
+                    )
+                }
+
+            function seeMorePorto() {
+                $('#image-bar').html('')
+                $('#button-see-more').addClass('d-none');
+                images.forEach((item, i) => {
+                    $('#image-bar').append(
+                        `<div class="col-4 p-1 mb-1">
+                            <img src="${item.gambar}" alt="${item.judul}" class="img-fluid">
+                        </div>`
+                    );
+                })
+            }
+        </script>
     </body>
 </html>
