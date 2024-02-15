@@ -1,0 +1,128 @@
+{
+    "nama":"Fadel Muhammad",
+    "title": "software engineer",
+    "profile" : "https://via.placeholder.com/730",
+    "intro" : "I have been immersed in the world of programming for over three years, gaining valuable experience along the way. As a fast learner, I am always eager to explore new programming languages. In my current role, I have been actively involved in the development of two projects using Laravel and two applications using Java Spring Boot. Additionally, I have undertaken numerous app development projects for clients, collaborating effectively with a skilled team. My expertise extends to managing and providing comprehensive data solutions for mobile developers through SQL/Non-SQL databases (APIs). I am also adept at identifying and resolving issues, utilizing languages such as JavaScript, Spring, and PHP in my day-to-day tasks. I embarked on my journey as a developer in 2019, and the subsequent years have been a rewarding experience of continuous growth and learning.",
+    "pendidikan" : {
+        "url" : null,
+        "nama" : "Bina Sarana Informatika University",
+        "gelar": "diploma",
+        "ipk" : "3.78",
+        "jurusan" : "System Information",
+        "dari" : 2017,
+        "sampai": "2020"
+    },
+    "pengalaman": [
+        {
+          "id" : 1,
+          "perusahaan": "PT Mitra Transaksi Indonesia",
+          "posisi": "Full-Stack Developer",
+          "waktu": {
+            "mulai": "Jan 2022",
+            "selesai": "Present"
+          },
+          "tugas": [
+            "Leading the development of the innovative PWA QRIS Mandiri (Livin Usaha) using React.js and Spring (On Client)",
+            "Contributing to the development of Nyala By OCBC",
+            "Creating a cutting-edge Training Website App",
+            "Resolving issues and bugs with precision",
+            "Introducing new features and meticulously documenting project details"
+          ]
+        },
+        {
+          "id" : 2,
+          "perusahaan": "PT Rekayasa Aplikasi Digital",
+          "posisi": "Full-Stack Developer",
+          "waktu": {
+            "mulai": "Sept 2020",
+            "selesai": "Dec 2021"
+          },
+          "tugas": [
+            "Leading the projects Sekolahdigi & Bantubeli with a focus on innovation",
+            "Crafting Apps & Websites for Bantubeli using Laravel",
+            "Architecting Apps & Websites for Sekolahdigi using Laravel",
+            "Coordinating seamlessly across diverse teams (Mobile and Front-End)",
+            "Integrating advanced Payment Gateway solutions",
+            "Implementing a streamlined Shipping Delivery Service on Bantubeli",
+            "Providing crucial support in resolving complex bugs"
+          ]
+        },
+        {
+          "id" : 3,
+          "perusahaan": "PT Sahabat Sejahtera",
+          "posisi": "Full-Stack Developer",
+          "waktu": {
+            "mulai": "Jan 2019",
+            "selesai": "Sept 2020"
+          },
+          "tugas": [
+            "Designing and developing an engaging website catalog using CodeIgniter",
+            "Effectively managing and showcasing a diverse range of products"
+          ]
+        },
+        {
+            "id": 4,
+            "perusahaan": "LSP Nusantara",
+            "posisi": "IT Support",
+            "waktu": {
+                "mulai": "Jul 2016",
+                "selesai": "Jan 2019"
+            },
+            "tugas": [
+                "Setting up networks",
+                "Handling asset purchases",
+                "Recording assets",
+                "Performing maintenance on networks and computers"
+            ]
+        }
+      ],
+      "kontak" : {
+        "github" : "https://github.com/sipadl",
+        "linkedin" : "https://www.linkedin.com/in/fadel-muhammad-7300ab170/",
+        "whatsapp": "https://wa.me/6281290669170?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda.",
+        "gmail" : "mailto:fadel.mm01@gmail.com"
+      },
+      "porto" : [
+        {
+            "isi": [],
+            "gambar" : "https://via.placeholder.com/300",
+            "judul" : "E-Commerce Sahabat Sejahtera"
+        },
+        {
+            "isi": [],
+            "gambar" : "https://via.placeholder.com/300",
+            "judul" : "Website CV LPK INA"
+        },
+        {
+            "isi": [],
+            "gambar" : "https://via.placeholder.com/300",
+            "judul" : "Website Undangan Online"
+        },
+        {
+            "isi": [],
+            "gambar" : "https://via.placeholder.com/300",
+            "judul" : "Livin Usaha"
+        },
+        {
+            "isi": [],
+            "gambar" : "https://via.placeholder.com/300",
+            "judul" : "Sekolah Digi"
+        },
+        {
+            "isi": [],
+            "gambar" : "https://via.placeholder.com/300",
+            "judul" : "BantuBeli"
+        },
+        {
+            "isi": [],
+            "gambar" : "https://via.placeholder.com/300",
+            "judul" : "Nyala Merchant by OCBC"
+        },
+        {
+            "isi": [],
+            "gambar" : "https://via.placeholder.com/300",
+            "judul" : "E-Library kampus UNJ"
+        }
+      ]
+
+}
