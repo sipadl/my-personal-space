@@ -18,3 +18,61 @@ a {
 ul {
     list-style: none;
 }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.nav-tabs {
+    background-color: #4267b2;
+    border-radius: 10px;
+}
+
+.nav-tabs .nav-link {
+    color: #ffffff;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #3b5998;
+}
+
+.tab-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#image-bar img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.head-form {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.main-porto {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
