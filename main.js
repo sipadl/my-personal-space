@@ -59,32 +59,6 @@ function portoList(data) {
                     src="https://via.placeholder.com/730"
                     class="img-fluid img-post-inner"
                     alt="">
-                <div class="row mt-1 mx-3">
-                    <div class="col-3 m-0 p-1">
-                        <img
-                            src="https://via.placeholder.com/730"
-                            class="img-fluid img-post-inner-bar"
-                            alt="">
-                    </div>
-                    <div class="col-3 m-0 p-1">
-                        <img
-                            src="https://via.placeholder.com/730"
-                            class="img-fluid img-post-inner-bar"
-                            alt="">
-                    </div>
-                    <div class="col-3 m-0 p-1">
-                        <img
-                            src="https://via.placeholder.com/730"
-                            class="img-fluid img-post-inner-bar"
-                            alt="">
-                    </div>
-                    <div class="col-3 m-0 p-1">
-                        <img
-                            src="https://via.placeholder.com/730"
-                            class="img-fluid img-post-inner-bar"
-                            alt="">
-                    </div>
-                </div>
             </div>
             <hr>
         </div>`

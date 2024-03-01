@@ -24,6 +24,9 @@ body {
     background-color: #f0f2f5;
 }
 
+
+
+
 .container {
     background-color: #ffffff;
     border-radius: 10px;
@@ -32,17 +35,57 @@ body {
     margin-top: 20px;
 }
 
+/* Style for the navigation tabs */
 .nav-tabs {
-    background-color: #4267b2;
-    border-radius: 10px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
 }
 
-.nav-tabs .nav-link {
-    color: #ffffff;
+/* Style for each individual tab */
+.nav-item {
+    margin-bottom: -1px; /* Adjust the spacing between tabs */
 }
 
+/* Style for the active tab */
+.nav-item a.active {
+    background-color: #007bff; /* Active tab background color */
+    color: #fff; /* Active tab text color */
+    border-color: #007bff; /* Active tab border color */
+}
+
+/* Style for the non-active tabs */
+.nav-item a {
+    color: #495057; /* Text color for non-active tabs */
+    border-color: #dee2e6; /* Border color for non-active tabs */
+}
+
+/* Hover effect for all tabs */
+.nav-item a:hover {
+    background-color: #e9ecef; /* Hover background color */
+    border-color: #dee2e6; /* Hover border color */
+}
 .nav-tabs .nav-link:hover {
     background-color: #3b5998;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: #007bff; /* Navbar background color */
+}
+
+/* Style for the navigation links */
+.navbar-nav .nav-link {
+    color: #fff !important; /* Text color for the navigation links */
+}
+
+/* Style for the active link */
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #0056b3; /* Active link background color */
+}
+
+/* Hover effect for the links */
+.navbar-nav .nav-link:hover {
+    color: #fff !important; /* Hover text color */
 }
 
 .tab-content {
@@ -54,8 +97,10 @@ body {
 }
 
 #image-bar img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     border-radius: 5px;
     margin-bottom: 10px;
 }
