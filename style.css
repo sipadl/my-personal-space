@@ -1,0 +1,28 @@
+body {
+    transition: background-color 0.5s;
+}
+/* Custom styles for dark mode */
+.dark-mode {
+    background-color: #242424;
+    color: #fff;
+}
+
+/* Style for the dark mode switch */
+.custom-switch .custom-control-input:checked~.custom-control-label::before {
+    background-color: #818181; /* Bootstrap primary color */
+}
+/* Adjust icon color based on dark mode state */
+.custom-control-label .fa-sun {
+    color: #f39c12; /* Font Awesome sun icon color */
+}
+
+.custom-control-label .fa-moon {
+    color: #f1c40f; /* Font Awesome moon icon color */
+}
+.img-a7x {
+    object-fit: cover;
+    object-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
