@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <style href="/style.css">
-        
-    </style>
+    <link rel="stylesheet" href="./assets/main.css">
     <title>-</title>
   </head>
   <body>
@@ -37,74 +35,123 @@
             <div class="col-md-9 col-sm-12 w-100 h-100">
                 <div class="card my-2 shadow">
                   <div class="jumbotron mb-1">
-                    <h4 class="display-4">Jumbo heading</h4>
+                    <h4 class="display-4" id="main-intro">Jumbo heading</h4>
                     <hr class="my-2">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat deserunt libero suscipit quod consequatur sint est accusamus sapiente totam nulla. Assumenda maxime accusantium saepe laboriosam eligendi fuga quaerat porro deserunt.</p>
+                    <p id="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat deserunt libero suscipit quod consequatur sint est accusamus sapiente totam nulla. Assumenda maxime accusantium saepe laboriosam eligendi fuga quaerat porro deserunt.</p>
                     <p class="lead">
                         <a class="btn btn-light btn-sm" href="Jumbo action link" role="button">download</a>
                         <a class="btn btn-light btn-sm" href="Jumbo action link" role="button">hire</a>
                     </p>
                   </div>
                   <div class="card-body">
-                    <!-- Education -->
-                    
                     <!-- Skiklls -->
                     <div class="skills">
-                        <h4>Card Title</h4>
+                        <h4 id="heading-skills">Card Title</h4>
                         <hr>
                         <div class="card-columns">
-                            <div class="card">
-                                <img class="card-img-top" src="https://placekitten.com/160/60" alt="">
+                            <div class="card text-center p-2">
+                                <small class="card-title">Card Title</small>
+                            </div>
+                            <div class="card text-center p-2">
+                                <small class="card-title">Card Title</small>
+                            </div>
+                            <div class="card text-center p-2">
+                                <small class="card-title">Card Title</small>
                             </div>
                         </div>
                     </div>
                     <!-- Educated -->
                     <div class="educated mb-4">
-                        <h4>Card Title</h4>
+                        <h4 id="education">Card Title</h4>
                         <hr>
-                        <div class="card text-left shadow rounded-lg">
-                          <div class="card-body">
-                            <h4 class="card-title m-0 p-0">Title</h4>
-                            <small class="card-text m-0 p-0">Body</small>
-                          </div>
+                        <div class="parent-edu">
+                            <div class="card text-left shadow rounded-lg">
+                                <div class="card-body">
+                                    <h4 class="card-title m-0 p-0">Card Title</h4>
+                                        <small class="card-text m-0 p-0">Card Title</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Experience -->
                     <div class="experience my-2">
                         <h4>Card Title</h4>
                         <hr>
-                        <div id="accordianId" role="tablist" aria-multiselectable="true">
+                        <div id="accordianId" class="accordionExp" role="tablist" aria-multiselectable="true">
                             <div class="card">
-                                <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                                <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-controls="section1ContentId">
                                     <div class="card-header bg-light text-dark" role="tab" id="section1HeaderId">
                                         <h5 class="mb-0">
-                                            Section 1
+                                            x
                                         </h5>
                                     </div>
                                 </a>
-                            <div id="section1ContentId" class="collapse active" role="tabpanel" aria-labelledby="section1HeaderId">
-                                <div class="card-body">
-                                    Section 1 content
+                                <div id="section1ContentId" class="collapse" role="tabpanel" aria-labelledby="section1HeaderId">
+                                    <div class="card-body">
+                                        y
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <!-- Porto -->
                     <div class="porto">
                             <h4>Card Title</h4>
                             <hr>
-                            <div class="card-columns">
-                                <div class="card">
-                                    <img class="card-img-top" src="https://placekitten.com/800/400" alt="">
-                                <div class="card-body p-2">
-                                    <a href="">
-                                        <h4 class="card-title">Title</h4>
-                                    </a>
+                            <div class="isi-portofolio">
+                                <div class="row isi-porto justify-content-center">
+                                    <div class="col-sm-3 card mx-auto">
+                                        <img class="card-img-top" src="https://placekitten.com/800/400" alt="">
+                                        <div class="card-body p-2">
+                                            <a href="">
+                                                <h4 class="card-title">Title</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 card mx-auto">
+                                        <img class="card-img-top" src="https://placekitten.com/800/400" alt="">
+                                        <div class="card-body p-2">
+                                            <a href="">
+                                                <h4 class="card-title">Title</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 card mx-auto">
+                                        <img class="card-img-top" src="https://placekitten.com/800/400" alt="">
+                                        <div class="card-body p-2">
+                                            <a href="">
+                                                <h4 class="card-title">Title</h4>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
+                    <div class="client-parrent">
+                        <h4 class="mt-4 mb-4">Card Title</h4>
+                        <div class="client row justify-content-center">
+                            <div key=${i} class="card col-md-3 custom-shadow align-items-center py-4 mx-3">
+                                <div class="box"></div>
+                                <div class="card-body text-center">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">Lorem Ipsum Dolor</p>
+                                </div>
+                                </div>
+                            <div key=${i} class="card col-md-3 custom-shadow align-items-center py-4 mx-3">
+                                <div class="box"></div>
+                                <div class="card-body text-center">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">Lorem Ipsum Dolor</p>
+                                </div>
+                                </div>
+                            <div key=${i} class="card col-md-3 custom-shadow align-items-center py-4 mx-3">
+                                <div class="box"></div>
+                                <div class="card-body text-center">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">Lorem Ipsum Dolor</p>
+                                </div>
+                                </div>
+                        </div>
                     <!-- Contact Me -->
                     <div class="contact">
                         <h4 class="mt-4 mb-4">Card Title</h4>
@@ -131,6 +178,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="/style.js"></script>
+    <script src="./assets/style.js"></script>
     </body>
 </html>
