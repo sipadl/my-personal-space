@@ -3,7 +3,7 @@ const dataDiri = {
     "nama":"Fadel Muhammad",
     "role": "Software Development",
     "profile" : "https://via.placeholder.com/730",
-    "intro" : "I have been immersed in the world of programming for over three years, gaining valuable experience along the way. As a fast learner, I am always eager to explore new programming languages. In my current role, I have been actively involved in the development of two projects using Laravel and two applications using Java Spring Boot. Additionally, I have undertaken numerous app development projects for clients, collaborating effectively with a skilled team. My expertise extends to managing and providing comprehensive data solutions for mobile developers through SQL/Non-SQL databases (APIs). I am also adept at identifying and resolving issues, utilizing languages such as JavaScript, Spring, and PHP in my day-to-day tasks. I embarked on my journey as a developer in 2019, and the subsequent years have been a rewarding experience of continuous growth and learning.",
+    "intro" : "I have over three years of programming experience, specializing in Laravel and Java Spring Boot. I've collaborated on various app development projects, managing data solutions and resolving issues using JavaScript, Spring, and PHP. My journey as a developer began in 2019 and has been a rewarding experience of continuous growth and learning.",
     "pendidikan" : [
         {
         "url" : null,
@@ -141,7 +141,7 @@ const dataDiri = {
               "/images/7.png"
           ],
             "gambar" : "/images/5.png",
-            "judul" : "Nyala Merchant by OCBC"
+            "judul" : "Nyala Merchant"
         },
         {
             "isi": ["/images/4.png"],
@@ -154,18 +154,25 @@ const dataDiri = {
 
 function loopClient() {
     const parent = $('.client');
-    const client = ['Integrity','Problem Solving','Accuracy']
-    client.forEach((val, i ) => {
+    const client = [
+        { name: 'Integrity', icon: 'fas fa-shield-alt' },
+        { name: 'Problem Solving', icon: 'fas fa-lightbulb' },
+        { name: 'Accuracy', icon: 'fas fa-bullseye' }
+    ];
+    client.forEach((item, i ) => {
        parent.append(`
        <div key=${i} class="card col-md-3 align-items-center py-4 mx-3 custom-shadow">
-        <div class="box"></div>
+        <div class="box">
+        <i class="${item.icon} dark-mode-text"></i>
+        </div>
             <div class="card-body text-center">
-            <h5 class="card-title">${val}</h5>
+            <h5 class="card-title"> ${item.name}</h5>
             <p class="card-text">Lorem Ipsum Dolor</p>
         </div>
-       </div>`)
-    })
+       </div>`);
+    });
 }
+
 
 $(document).ready(() => {
     if(mode === true ){
@@ -174,9 +181,13 @@ $(document).ready(() => {
         $('.parent-edu').html("");
         // Pribadi
         $('#name').html(dataDiri.nama);
-        $('#role').html(dataDiri.nama);
+        $('#role').html(dataDiri.role);
         $('#main-intro').html("Hi Im Fadel Muhammad!");
         $('#intro').html(dataDiri.intro);
+        $('#experience').html("Experience")
+        $('#service').html("Our Services")
+        $('#portofolio').html("Portofolio")
+        $('#contact').html("contact")
 
         loopClient()
         // Skills
@@ -184,7 +195,6 @@ $(document).ready(() => {
 
         // Education
         $('#education').html("Education")
-
         dataDiri.pendidikan.forEach((item) => {
             $('.parent-edu').append(`
             <div class="card text-left shadow rounded-lg">
@@ -207,8 +217,9 @@ $(document).ready(() => {
                         </a>
                         <div id="section1ContentId-${i}" class="collapse ${status}" role="tabpanel" aria-labelledby="section1HeaderId-${i}">
                             <div class="card-body">
+                                Role : <quote>${x.posisi}</quote> <br>
                                 Responsibility :
-                                <ol type="I">
+                                <ol type="a">
                                     ${loopResponsibilty(x.tugas)}
                                 </ol>
                             </div>
@@ -232,13 +243,15 @@ $(document).ready(() => {
         $('.isi-porto').html("");
         dataDiri.porto.forEach((item) => {
             $('.isi-porto').append(`
-            <div class="card col-sm-3 mx-auto">
-                <a class="text-body" href="#">
-                    <img class="fix-images" src="${item.gambar}" alt="">
-                    <div class="card-body p-2">
-                        <p class="card-title">${item.judul}</p>
-                    </div>
+            <div class="card col-sm-3 col-md-3 mt-2 m-2">
+            <div class="">
+            <a class="text-body" href="#">
+            <img class="fix-images" src="${item.gambar}" alt="">
+                <div class="card-body p-2">
+                <p class="card-title text-center">${item.judul}</p>
+                </div>
                 </a>
+                </div>
             </div>`)
         })
     }

@@ -7,6 +7,10 @@ body {
     color: #fff;
 }
 
+.dark-mode-text {
+    color: #fff;
+}
+
 /* Style for the dark mode switch */
 .custom-switch .custom-control-input:checked~.custom-control-label::before {
     background-color: #818181; /* Bootstrap primary color */
@@ -22,8 +26,8 @@ body {
 .img-a7x {
     object-fit: cover;
     object-position: center;
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
 }
 .box {
@@ -31,11 +35,19 @@ body {
     width: 60px;
     background-color: gray;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Style untuk ikon di dalam kotak */
+.box i {
+    font-size: 24px; /* Sesuaikan ukuran ikon */
 }
 .fix-images {
-    height: 200px;
-    width: 200px;
-    object-fit: contain;
+    height: 30vh;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 
 .custom-shadow:hover {
@@ -59,5 +71,5 @@ html, body {
 /* Menambahkan efek transisi untuk perubahan properti top */
 html {
     scroll-behavior: smooth;
-    transition: top 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
