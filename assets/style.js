@@ -187,12 +187,10 @@ $(document).ready(() => {
         $('#experience').html("Experience")
         $('#service').html("Our Services")
         $('#portofolio').html("Portofolio")
-        $('#contact').html("contact")
-
+        $('#contact').html("Contact Me")
         loopClient()
         // Skills
         $('#heading-skills').html("Skills")
-
         // Education
         $('#education').html("Education")
         dataDiri.pendidikan.forEach((item) => {
@@ -255,27 +253,19 @@ $(document).ready(() => {
             </div>`)
         })
     }
-
     getListMenu();
-    
 });
-
 $(window).on('hashchange', function() {
     $('#list-menu').html('')
     getListMenu();
 })
-
 function getListMenu () {
     const menu = ['About','Skill','Education','Experience','Portofolio','Service','Contact']
     menu.forEach((val, i) => {
         const hash = window.location.hash.replace('#', '');
-        $('#list-menu').append(
-            `<a href="#${val.toLowerCase()}" class="list-group-item bg-transparent list-group-item-action border-0 my-0 ${hash === val.toLowerCase() || (!hash && val.toLowerCase() === 'about') ? 'active' : '' }">${val}</a>
-            `
-            )
+        $('#list-menu').append(`<a href="#${val.toLowerCase()}" class="list-group-item bg-transparent list-group-item-action border-0 my-0 ${hash === val.toLowerCase() || (!hash && val.toLowerCase() === 'about') ? 'active' : '' }">${val}</a>`)
         });
 }
-
 if(window.innerHeight < window.innerWidth){
     $('#headers').addClass("sticky-top");
 } else {
