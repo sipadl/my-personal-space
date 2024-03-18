@@ -1,4 +1,4 @@
-const mode = false;
+const mode = true;
 const dataDiri = {
     "nama":"Fadel Muhammad",
     "role": "Software Development",
@@ -243,14 +243,25 @@ $(document).ready(() => {
         })
     }
 
-    const menu = ['a','b','c','d']
-    for(let i = 0; i <= menu.length -1 ; i++ )
-    {
-    $('#list-menu').append(
-        `<a href="#" class="list-group-item list-group-item-action border-0 my-0 ${i === 0 ? 'active' : '' }">${menu[i]}</a>`
-        )
-    }
+    getListMenu();
+    
+});
+
+$(window).on('hashchange', function() {
+    $('#list-menu').html('')
+    getListMenu();
 })
+
+function getListMenu () {
+    const menu = ['About','Skill','Education','Experience','Portofolio','Service','Contact']
+    menu.forEach((val, i) => {
+        const hash = window.location.hash.replace('#', '');
+        $('#list-menu').append(
+            `<a href="#${val.toLowerCase()}" class="list-group-item bg-transparent list-group-item-action border-0 my-0 ${hash === val.toLowerCase() || (!hash && val.toLowerCase() === 'about') ? 'active' : '' }">${val}</a>
+            `
+            )
+        });
+}
 
 if(window.innerHeight < window.innerWidth){
     $('#headers').addClass("sticky-top");

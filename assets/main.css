@@ -48,3 +48,16 @@ body {
 -webkit-box-shadow: 10px 13px 18px -3px rgba(0,0,0,0.23);
 -moz-box-shadow: 10px 13px 18px -3px rgba(0,0,0,0.23);
 }
+.list-group-item.active {
+    background-color: #a5a5a577 !important;
+    width: inherit;
+}
+html, body {
+    scroll-behavior: smooth; /* Mengaktifkan perilaku gulir mulus */
+}
+
+/* Menambahkan efek transisi untuk perubahan properti top */
+html {
+    scroll-behavior: smooth;
+    transition: top 0.5s ease-in-out;
+}

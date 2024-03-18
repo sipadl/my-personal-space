@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="col-md-9 col-sm-12 w-100 h-100">
-                <div class="card my-2 shadow">
+                <div class="card my-2 shadow" id="about">
                   <div class="jumbotron mb-1">
                     <h4 class="display-4" id="main-intro">Jumbo heading</h4>
                     <hr class="my-2">
@@ -45,7 +45,7 @@
                   </div>
                   <div class="card-body">
                     <!-- Skiklls -->
-                    <div class="skills">
+                    <div class="bodys skills" id="skill page="skills">
                         <h4 id="heading-skills">Card Title</h4>
                         <hr>
                         <div class="card-columns">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <!-- Educated -->
-                    <div class="educated mb-4">
+                    <div class="bodys educated mb-4" id="education" page="educated">
                         <h4 id="education">Card Title</h4>
                         <hr>
                         <div class="parent-edu">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <!-- Experience -->
-                    <div class="experience my-2">
+                    <div class="bodys experience my-2" id="experience" page="experience">
                         <h4>Card Title</h4>
                         <hr>
                         <div id="accordianId" class="accordionExp" role="tablist" aria-multiselectable="true">
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <!-- Porto -->
-                    <div class="porto">
+                    <div class="bodys porto" page="portofolio" id="portofolio">
                             <h4>Card Title</h4>
                             <hr>
                             <div class="isi-portofolio">
@@ -127,7 +127,7 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="client-parrent">
+                    <div class="bodys client-parrent" id="service" page="service">
                         <h4 class="mt-4 mb-4">Card Title</h4>
                         <div class="client row justify-content-center">
                             <div key=${i} class="card col-md-3 custom-shadow align-items-center py-4 mx-3">
@@ -152,20 +152,21 @@
                                 </div>
                                 </div>
                         </div>
+                    </div>
                     <!-- Contact Me -->
-                    <div class="contact">
+                    <div class="bodys contact" id="contact" page="contact">
                         <h4 class="mt-4 mb-4">Card Title</h4>
                         <hr>
                         <form>
                             <div class="form-group">
-                                <label for="nama">Nama:</label>
-                                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+                                <label for="nama">Name:</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Show me your name">
                             </div>
                             <div class="form-group">
-                                <label for="pesan">Pesan:</label>
-                                <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda"></textarea>
+                                <label for="pesan">Message:</label>
+                                <textarea class="form-control" id="pesan" rows="4" placeholder="Send me some message"></textarea>
                             </div>
-                                <button type="submit" class="btn btn-light w-100">Kirim Pesan</button>
+                                <button type="submit" class="btn btn-light w-100">Message</button>
                         </form>
                     </div>
                   </div>
