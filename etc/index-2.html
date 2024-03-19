@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="main.css">
+        <title>My CV</title>
+    </head>
+    <body>
+        <header class="text-white p-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <img
+                            src="https://via.placeholder.com/150"
+                            alt="Profile Picture"
+                            class="img-fluid rounded-circle">
+                        <!-- Placeholder URL for fake image -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <h1 id="name"></h1>
+                        <p id="role"></p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="d-inline">
+                            <a href="" class="btn btn-primary">Hire me!</a>
+                            <a href="" class="btn btn-light">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="mt-4">
+            <ul class="nav nav-tabs container" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        id="skills-tab"
+                        data-toggle="tab"
+                        href="#skills"
+                        role="tab"
+                        aria-controls="skills"
+                        aria-selected="true"><h6>Portofolio</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        id="profile-tab"
+                        data-toggle="tab"
+                        href="#profile"
+                        role="tab"
+                        aria-controls="profile"
+                        aria-selected="false"><h6>About</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        id="contact-tab"
+                        data-toggle="tab"
+                        href="#contact"
+                        role="tab"
+                        aria-controls="contact"
+                        aria-selected="false"><h6>Photos</h6>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content container" id="myTabContent">
+                <div
+                    class="tab-pane fade show active"
+                    id="skills"
+                    role="tabpanel"
+                    aria-labelledby="skills-tab">
+                    <div class="row d-flex justify-content-space">
+                        <div class="col-md-4 my-2">
+                            <div class="round-3 round-3 p-2" id="body">
+                                <div class="mt-2">
+                                    <h4>Intro</h4>
+                                    <hr class="bg-light">
+                                    <div class="">
+                                        <small id="intro">
+                                        </small>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h4>Contact</h4>
+                                        <hr class="bg-light">
+                                        <ul style="list-style: none;" class="m-1 p-1">
+                                            <li class="my-2">
+                                                <a href="www.github.com/sipadl" id="github" class="text-body">
+                                                    <i class="fa-brands fa-github"></i>
+                                                    Github</a>
+                                            </li>
+                                            <li class="my-2">
+                                                <a href="https://www.linkedin.com/in/fadel-muhammad-7300ab170/" id="linkedin" class="text-body">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                    Linkedin</a>
+                                            </li>
+                                            <li class="my-2">
+                                                <a href="#" onclick="openWhatsApp()" id="wa" class="text-body">
+                                                    <i class="fa-brands fa-whatsapp"></i>
+                                                    Whatsapp</a>
+                                            </li>
+                                            <li class="my-2">
+                                                <a href="mailto:fadel.mm01@gmail.com" id="email" class="text-body">
+                                                    <i class="fa fa-envelope"></i>
+                                                    Email</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="knowledge mt-2">
+                                    <h4>Knowledge</h4>
+                                    <hr class="bg-light">
+                                    <ul style="list-style: none;" class="m-1 p-1">
+                                        <li>
+                                            <i class="fa-brands fa-html5"></i>
+                                            HTML</li>
+                                        <li>
+                                            <i class="fa-brands fa-laravel"></i>
+                                            Laravel ( PHP )</li>
+                                        <li>
+                                            <i class="fa-brands fa-react"></i>
+                                            React ( Native / Js )</li>
+                                        <li>
+                                            <i class="fa-brands fa-js"></i>
+                                            Express Js</li>
+                                        <li>
+                                            <i class="fa-brands fa-java"></i>
+                                            Spring Boot ( Java )</li>
+                                        <li>
+                                            <i class="fas fa-database"></i>
+                                            Postgree, MySql, Oracle & Firebase</li>
+                                    </ul>
+                                </div>
+                                <div class="photos mt-2">
+                                    <h4>Photos</h4>
+                                    <hr class="bg-light">
+                                    <div class="row" id="image-bar"></div>
+                                    <button
+                                        id="button-see-more"
+                                        class="btn btn-light w-100 m-0 mt-2"
+                                        onclick="seeMorePorto()">
+                                        See More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 my-2 mt-4">
+                            <h4>Portiofolio</h4>
+                            <hr class="bg-light">
+                            <div class="head-form d-flex p-2 py-4 justify-content-between bunder">
+                                <div class="mx-2">
+                                    <img
+                                        src="https://via.placeholder.com/150"
+                                        class="img-fluid rounded-circle mx-2"
+                                        width="40"
+                                        height="40"
+                                        alt="">
+                                </div>
+                                <div class="w-100 d-inline px-2">
+                                    <a
+                                        href="mailto:fadel.mm01@gmail.com"
+                                        style="text-decoration: none;"
+                                        target="_blank"
+                                        class="w-100 form-control bunder bg-light text-secondary">
+                                        Send something to padel..
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main-porto mx-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab">
+                    <div class="about-box bunder my-4 mt-4">
+                        <div class="">
+                            <h4>Experiences and Education</h4>
+                            <hr>
+                        </div>
+                        <h4><i class="fas fa-briefcase"></i> Work Experience</h4>
+                        <div class="work-list">
+                        </div>
+                        <hr>
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <div class="edu-list">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="contact"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab">
+                    <div class="my-4">
+                        <h4>Photos</h4>
+                        <hr>
+                        <div class="row" id="image-bar-x">        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <footer class="bg-light p-2 text-center">
+            <p>Contact: fadel.mm01@gmail.com</p>
+        </footer> -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+     </body>
+</html>

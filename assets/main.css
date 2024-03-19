@@ -99,3 +99,19 @@ html {
     height: 100px;
     object-fit: contain;
 }
+.red {
+    background: rgba(210, 0, 0, 0.977);
+    color: white;
+}
+.green {
+    background-color: green;
+    color: white;
+}
+.blue {
+    background-color: blue;
+    color: white;
+}
+.yellow {
+    background-color: orange;
+    color: white;
+}

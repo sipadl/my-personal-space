@@ -1,9 +1,18 @@
-const mode = false;
+const mode = true;
+const redirectToWa = () => {
+    // Replace the phone number below with your own WhatsApp number
+    const phoneNumber = '081290669170'; 
+    const message = '';
+    const url = `https://wa.me/6281290669170?text=Hello! I am interested in your services.`;
+    
+    // Redirect to WhatsApp
+    window.location.href = url;
+}
 const dataDiri = {
     "nama":"Fadel Muhammad",
     "role": "Software Development",
     "profile" : "https://via.placeholder.com/730",
-    "intro" : "I have over three years of programming experience, specializing in Laravel and Java Spring Boot. I've collaborated on various app development projects, managing data solutions and resolving issues using JavaScript, Spring, and PHP. My journey as a developer began in 2019 and has been a rewarding experience of continuous growth and learning.",
+    "intro" : "Im Fadel and I have over three years of programming experience, specializing in Laravel and Java Spring Boot. I've collaborated on various app development projects, managing data solutions and resolving issues using JavaScript, Spring, and PHP. My journey as a developer began in 2019 and has been a rewarding experience of continuous growth and learning.",
     "pendidikan" : [
         {
         "url" : null,
@@ -24,6 +33,28 @@ const dataDiri = {
             "mulai": "Jan 2022",
             "selesai": "Present"
           },
+          "tags":[
+            {
+                'lang': 'Laravel',
+                'class': 'badge red'
+            },
+            {
+                'lang': 'React Js',
+                'class': 'badge blue'
+            },
+            {
+                'lang': 'Oracle',
+                'class': 'badge red'
+            },
+            {
+                'lang': 'Spring Boot',
+                'class': 'badge green'
+            },
+            {
+                'lang': 'Firebase',
+                'class': 'badge yellow'
+            }
+        ],
           "tugas": [
             "Leading the development of the innovative PWA QRIS Mandiri (Livin Usaha) using React.js and Spring (On Client)",
             "Contributing to the development of Nyala By OCBC",
@@ -40,6 +71,24 @@ const dataDiri = {
             "mulai": "Sept 2020",
             "selesai": "Dec 2021"
           },
+          "tags":[
+            {
+                'lang': 'Laravel',
+                'class': 'badge red'
+            },
+            {
+                'lang': 'React Js',
+                'class': 'badge blue'
+            },
+            {
+                'lang': 'React Native',
+                'class': 'badge blue'
+            },
+            {
+                'lang': 'Oracle',
+                'class': 'badge red'
+            },
+        ],
           "tugas": [
             "Leading the projects Sekolahdigi & Bantubeli with a focus on innovation",
             "Crafting Apps & Websites for Bantubeli using Laravel",
@@ -58,6 +107,16 @@ const dataDiri = {
             "mulai": "Jan 2019",
             "selesai": "Sept 2020"
           },
+          "tags":[
+            {
+                'lang': 'Laravel',
+                'class': 'badge red'
+            },
+            {
+                'lang': 'CodeIgniter',
+                'class': 'badge red'
+            },
+        ],
           "tugas": [
             "Designing and developing an engaging website catalog using CodeIgniter",
             "Effectively managing and showcasing a diverse range of products"
@@ -71,6 +130,7 @@ const dataDiri = {
                 "mulai": "Jul 2016",
                 "selesai": "Jan 2019"
             },
+            "tags":[],
             "tugas": [
                 "Setting up networks",
                 "Handling asset purchases",
@@ -175,7 +235,7 @@ function loopClient() {
 function cardSkills (min, max) {
     let hasil = [];
     for (let index = min; index <= max; index++) {
-        hasil.push(`<div class="card col-sm-3 mx-2 p-2">
+        hasil.push(`<div class="card border-0 col-sm-3 mx-2 p-2">
                         <img src="/images/logo/${index}.png" class="img-skils-img" alt="">
                     </div>`)
     }
@@ -183,8 +243,18 @@ function cardSkills (min, max) {
     $('#card-skills').append(hasil)
 }
 
+function settTags(data) {
+    let hasil = [];
+    data.forEach((val => {
+        hasil.push(`<div class="${val.class}">${val.lang}</div>`)
+    })
+    )
+
+    return hasil.join('\n');
+}
+
 $(document).ready(() => {
-    cardSkills(1,7)
+    cardSkills(1,6)
     if(mode === true ){
         $('.client').html("")
         $('.accordionExp').html("");
@@ -192,7 +262,7 @@ $(document).ready(() => {
         // Pribadi
         $('#name').html(dataDiri.nama);
         $('#role').html(dataDiri.role);
-        $('#main-intro').html("Hi Im Fadel Muhammad!");
+        $('#main-intro').html("Welcome to My CV");
         $('#intro').html(dataDiri.intro);
         $('#experience').html("Experience")
         $('#service').html("Our Services")
@@ -226,6 +296,7 @@ $(document).ready(() => {
                         <div id="section1ContentId-${i}" class="collapse ${status}" role="tabpanel" aria-labelledby="section1HeaderId-${i}">
                             <div class="card-body">
                                 Role : <quote>${x.posisi}</quote> <br>
+                                Tags :  ${ x.tags.length ? settTags(x.tags) : '-' }<br>
                                 Responsibility :
                                 <ol type="a">
                                     ${loopResponsibilty(x.tugas)}
@@ -251,8 +322,8 @@ $(document).ready(() => {
         $('.isi-porto').html("");
         dataDiri.porto.forEach((item) => {
             $('.isi-porto').append(`
-            <div class="card col-sm-3 col-md-3 mt-2 m-2">
-            <div class="">
+            <div class="card  border-0 col-sm-12 col-md-12 mt-2">
+            <div class="p-2">
             <a class="text-body" href="#">
             <img class="fix-images" src="${item.gambar}" alt="">
                 <div class="card-body p-2">
