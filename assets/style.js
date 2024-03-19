@@ -1,4 +1,4 @@
-const mode = true;
+const mode = false;
 const dataDiri = {
     "nama":"Fadel Muhammad",
     "role": "Software Development",
@@ -172,9 +172,19 @@ function loopClient() {
        </div>`);
     });
 }
-
+function cardSkills (min, max) {
+    let hasil = [];
+    for (let index = min; index <= max; index++) {
+        hasil.push(`<div class="card col-sm-3 mx-2 p-2">
+                        <img src="/images/logo/${index}.png" class="img-skils-img" alt="">
+                    </div>`)
+    }
+    hasil.join('\n')
+    $('#card-skills').append(hasil)
+}
 
 $(document).ready(() => {
+    cardSkills(1,7)
     if(mode === true ){
         $('.client').html("")
         $('.accordionExp').html("");

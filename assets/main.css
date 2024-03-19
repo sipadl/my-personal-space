@@ -73,3 +73,29 @@ html {
     scroll-behavior: smooth;
     transition: 0.5s ease-in-out;
 }
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-info li {
+    margin-bottom: 10px;
+}
+.contact-info i {
+    margin-right: 10px;
+}
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+.skill-list-item {
+    margin-bottom: 10px;
+}
+.skill-icon {
+    margin-right: 10px;
+}
+.img-skils-img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
